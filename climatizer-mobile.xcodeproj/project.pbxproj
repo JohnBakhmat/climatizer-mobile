@@ -11,6 +11,7 @@
 		B844A8A9275BAABA00C3B4CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B844A8A8275BAABA00C3B4CA /* ContentView.swift */; };
 		B844A8AB275BAABB00C3B4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B844A8AA275BAABB00C3B4CA /* Assets.xcassets */; };
 		B844A8AE275BAABB00C3B4CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B844A8AD275BAABB00C3B4CA /* Preview Assets.xcassets */; };
+		B844A8B5275BB67E00C3B4CA /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B844A8B4275BB67E00C3B4CA /* KeyboardResponder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		B844A8A8275BAABA00C3B4CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B844A8AA275BAABB00C3B4CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B844A8AD275BAABB00C3B4CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B844A8B4275BB67E00C3B4CA /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				B844A8A8275BAABA00C3B4CA /* ContentView.swift */,
 				B844A8AA275BAABB00C3B4CA /* Assets.xcassets */,
 				B844A8AC275BAABB00C3B4CA /* Preview Content */,
+				B844A8B4275BB67E00C3B4CA /* KeyboardResponder.swift */,
 			);
 			path = "climatizer-mobile";
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				B844A8A9275BAABA00C3B4CA /* ContentView.swift in Sources */,
 				B844A8A7275BAABA00C3B4CA /* climatizer_mobileApp.swift in Sources */,
+				B844A8B5275BB67E00C3B4CA /* KeyboardResponder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
