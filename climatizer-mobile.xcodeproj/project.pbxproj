@@ -8,19 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		B844A8A7275BAABA00C3B4CA /* climatizer_mobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B844A8A6275BAABA00C3B4CA /* climatizer_mobileApp.swift */; };
-		B844A8A9275BAABA00C3B4CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B844A8A8275BAABA00C3B4CA /* ContentView.swift */; };
+		B844A8A9275BAABA00C3B4CA /* AuthPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B844A8A8275BAABA00C3B4CA /* AuthPage.swift */; };
 		B844A8AB275BAABB00C3B4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B844A8AA275BAABB00C3B4CA /* Assets.xcassets */; };
 		B844A8AE275BAABB00C3B4CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B844A8AD275BAABB00C3B4CA /* Preview Assets.xcassets */; };
 		B844A8B5275BB67E00C3B4CA /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B844A8B4275BB67E00C3B4CA /* KeyboardResponder.swift */; };
+		B844A8B7275BC13400C3B4CA /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B844A8BB275BC15200C3B4CA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B844A8BA275BC15200C3B4CA /* Alamofire */; };
+		B8DBD742275F9CA800391E13 /* Workspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DBD741275F9CA800391E13 /* Workspace.swift */; };
+		B8DBD745275FA1D800391E13 /* SwiftUIRouter in Frameworks */ = {isa = PBXBuildFile; productRef = B8DBD744275FA1D800391E13 /* SwiftUIRouter */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B844A8B8275BC13400C3B4CA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B844A8B7275BC13400C3B4CA /* (null) in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B844A8A3275BAABA00C3B4CA /* climatizer-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "climatizer-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B844A8A6275BAABA00C3B4CA /* climatizer_mobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = climatizer_mobileApp.swift; sourceTree = "<group>"; };
-		B844A8A8275BAABA00C3B4CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B844A8A8275BAABA00C3B4CA /* AuthPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPage.swift; sourceTree = "<group>"; };
 		B844A8AA275BAABB00C3B4CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B844A8AD275BAABB00C3B4CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B844A8B4275BB67E00C3B4CA /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
+		B8DBD741275F9CA800391E13 /* Workspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workspace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +47,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B844A8BB275BC15200C3B4CA /* Alamofire in Frameworks */,
+				B8DBD745275FA1D800391E13 /* SwiftUIRouter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2143C9293909963DA1605181 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B844A89A275BAABA00C3B4CA = {
 			isa = PBXGroup;
 			children = (
 				B844A8A5275BAABA00C3B4CA /* climatizer-mobile */,
 				B844A8A4275BAABA00C3B4CA /* Products */,
+				2143C9293909963DA1605181 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,10 +83,11 @@
 			isa = PBXGroup;
 			children = (
 				B844A8A6275BAABA00C3B4CA /* climatizer_mobileApp.swift */,
-				B844A8A8275BAABA00C3B4CA /* ContentView.swift */,
+				B844A8A8275BAABA00C3B4CA /* AuthPage.swift */,
 				B844A8AA275BAABB00C3B4CA /* Assets.xcassets */,
 				B844A8AC275BAABB00C3B4CA /* Preview Content */,
 				B844A8B4275BB67E00C3B4CA /* KeyboardResponder.swift */,
+				B8DBD741275F9CA800391E13 /* Workspace.swift */,
 			);
 			path = "climatizer-mobile";
 			sourceTree = "<group>";
@@ -80,12 +110,17 @@
 				B844A89F275BAABA00C3B4CA /* Sources */,
 				B844A8A0275BAABA00C3B4CA /* Frameworks */,
 				B844A8A1275BAABA00C3B4CA /* Resources */,
+				B844A8B8275BC13400C3B4CA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "climatizer-mobile";
+			packageProductDependencies = (
+				B844A8BA275BC15200C3B4CA /* Alamofire */,
+				B8DBD744275FA1D800391E13 /* SwiftUIRouter */,
+			);
 			productName = "climatizer-mobile";
 			productReference = B844A8A3275BAABA00C3B4CA /* climatizer-mobile.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +149,10 @@
 				Base,
 			);
 			mainGroup = B844A89A275BAABA00C3B4CA;
+			packageReferences = (
+				B844A8B9275BC15200C3B4CA /* XCRemoteSwiftPackageReference "Alamofire" */,
+				B8DBD743275FA1D800391E13 /* XCRemoteSwiftPackageReference "SwiftUIRouter" */,
+			);
 			productRefGroup = B844A8A4275BAABA00C3B4CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +179,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B844A8A9275BAABA00C3B4CA /* ContentView.swift in Sources */,
+				B844A8A9275BAABA00C3B4CA /* AuthPage.swift in Sources */,
+				B8DBD742275F9CA800391E13 /* Workspace.swift in Sources */,
 				B844A8A7275BAABA00C3B4CA /* climatizer_mobileApp.swift in Sources */,
 				B844A8B5275BB67E00C3B4CA /* KeyboardResponder.swift in Sources */,
 			);
@@ -345,6 +385,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B844A8B9275BC15200C3B4CA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B8DBD743275FA1D800391E13 /* XCRemoteSwiftPackageReference "SwiftUIRouter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/frzi/SwiftUIRouter.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B844A8BA275BC15200C3B4CA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B844A8B9275BC15200C3B4CA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		B8DBD744275FA1D800391E13 /* SwiftUIRouter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8DBD743275FA1D800391E13 /* XCRemoteSwiftPackageReference "SwiftUIRouter" */;
+			productName = SwiftUIRouter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B844A89B275BAABA00C3B4CA /* Project object */;
 }

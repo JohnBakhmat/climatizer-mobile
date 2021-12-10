@@ -6,18 +6,58 @@
 //
 
 import SwiftUI
+import Alamofire
+import SwiftUIRouter
 
 let storedUsername = "johnbakhmat"
 let storedPassword = "123456"
+
+struct RequestResponse:Decodable{
+    let idToken:String
+    
+    
+    enum CodingKeys: String,CodingKey{
+        case idToken = "idToken"
+    }
+}
 
 
 
 let lightGreyColor = Color(red: 239/255, green: 243.0/255, blue: 244.0/255.0, opacity: 1.0)
 
-struct ContentView: View {
-    
-    @State var username: String = ""
-    @State var password: String = ""
+struct AuthPage: View {
+    func logIn(username: String, password: String){
+        
+        let parameters: [String:String]=[
+            "email":username,
+            "password":password
+        ]
+        
+        let defaults = UserDefaults.standard
+        AF.request(
+            "http://192.168.0.106:3099/auth/login",
+            method: .post,
+            parameters: parameters,
+            encoder: JSONParameterEncoder.default
+        ).responseDecodable(of: RequestResponse.self){
+            (response) in
+            switch response.result{
+            case .success:
+                guard let accessToken = response.value?.idToken else { return }
+                print(accessToken)
+                defaults.set(accessToken,forKey: "accessToken")
+                self.authenticationDidSucceed = true
+                self.authenticationDidFail=false
+                
+                
+            case let .failure(error):
+                self.authenticationDidFail = true
+                        print(error)
+            }
+        }
+    }
+    @State var username: String = "yevhenii.bakhmat@nure.ua"
+    @State var password: String = "9012002Bjy"
     
     @State var authenticationDidFail: Bool = false
     @State var authenticationDidSucceed: Bool = false
@@ -41,15 +81,15 @@ struct ContentView: View {
                     
                     Button(action: {
                         print("Button Tapped")
-                        if(self.username == storedUsername && self.password == storedPassword){
-                            self.authenticationDidSucceed = true
-                            self.authenticationDidFail = false
-                        }else{
-                            self.authenticationDidFail = true
-                        }
+                        logIn(username:self.username, password: self.password)
                     }){
                         LoginButtonContent()
                     }
+                    if(authenticationDidSucceed){
+                        Navigate(to: "/workspace")
+                    }
+                    
+                    
                 }.padding()
                 
                 if(authenticationDidSucceed){
@@ -69,7 +109,7 @@ struct ContentView: View {
 #if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AuthPage()
     }
 }
 #endif

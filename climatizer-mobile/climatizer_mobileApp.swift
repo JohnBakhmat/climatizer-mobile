@@ -6,12 +6,24 @@
 //
 
 import SwiftUI
+import SwiftUIRouter
 
 @main
 struct climatizer_mobileApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Router{
+            SwitchRoutes{
+                
+                Route("workspace"){
+                    Workspace()
+                }
+                Route{
+                    AuthPage()
+                }
+            }
+                
+            }
         }
     }
 }
