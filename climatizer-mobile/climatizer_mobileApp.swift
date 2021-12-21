@@ -14,16 +14,19 @@ struct climatizer_mobileApp: App {
         WindowGroup {
             Router{
             SwitchRoutes{
-                
+
                 Route("workspace"){
                     Workspace()
+                }
+                Route("room/:id"){
+                    info in Room(id: Int(info.parameters["id"]!)!)
                 }
                 Route{
                     AuthPage()
                 }
             }
                 
-            }
+        }
         }
     }
 }

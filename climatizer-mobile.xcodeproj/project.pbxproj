@@ -14,6 +14,7 @@
 		B844A8B5275BB67E00C3B4CA /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B844A8B4275BB67E00C3B4CA /* KeyboardResponder.swift */; };
 		B844A8B7275BC13400C3B4CA /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B844A8BB275BC15200C3B4CA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B844A8BA275BC15200C3B4CA /* Alamofire */; };
+		B8BFAB2B2772378800E558A6 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BFAB2A2772378800E558A6 /* Room.swift */; };
 		B8DBD742275F9CA800391E13 /* Workspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DBD741275F9CA800391E13 /* Workspace.swift */; };
 		B8DBD745275FA1D800391E13 /* SwiftUIRouter in Frameworks */ = {isa = PBXBuildFile; productRef = B8DBD744275FA1D800391E13 /* SwiftUIRouter */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		B844A8AA275BAABB00C3B4CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B844A8AD275BAABB00C3B4CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B844A8B4275BB67E00C3B4CA /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
+		B8BFAB2A2772378800E558A6 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		B8DBD741275F9CA800391E13 /* Workspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workspace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 				B844A8AC275BAABB00C3B4CA /* Preview Content */,
 				B844A8B4275BB67E00C3B4CA /* KeyboardResponder.swift */,
 				B8DBD741275F9CA800391E13 /* Workspace.swift */,
+				B8BFAB2A2772378800E558A6 /* Room.swift */,
 			);
 			path = "climatizer-mobile";
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				B8DBD742275F9CA800391E13 /* Workspace.swift in Sources */,
 				B844A8A7275BAABA00C3B4CA /* climatizer_mobileApp.swift in Sources */,
 				B844A8B5275BB67E00C3B4CA /* KeyboardResponder.swift in Sources */,
+				B8BFAB2B2772378800E558A6 /* Room.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

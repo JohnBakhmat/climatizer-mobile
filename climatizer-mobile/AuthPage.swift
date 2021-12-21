@@ -47,7 +47,7 @@ struct AuthPage: View {
                 print(accessToken)
                 defaults.set(accessToken,forKey: "accessToken")
                 self.authenticationDidSucceed = true
-                self.authenticationDidFail=false
+                self.authenticationDidFail = false
                 
                 
             case let .failure(error):
