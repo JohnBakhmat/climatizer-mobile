@@ -5,3 +5,17 @@
   Created by Евгений Бахмат on 27.12.2021.
   
 */
+
+English
+"temperature"="Temperature"
+"humidity"="Humidity"
+"login"="LogIn"
+"password"="Password"
+"save"="Save"
+
+Ukrainian
+"temperature"="Температура"
+"humidity"="Вологість"
+"login"="Увійти"
+"password"="Пароль"
+"save"="Зберігти"

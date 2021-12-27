@@ -128,7 +128,7 @@ struct UserImage: View {
 
 struct LoginButtonContent: View {
     var body: some View {
-        Text("LOGIN").font(.headline).foregroundColor(.white).padding().frame(width: 220, height: 60).background(Color.green).cornerRadius(15.0)
+        Text("login").font(.headline).foregroundColor(.white).padding().frame(width: 220, height: 60).background(Color.green).cornerRadius(15.0)
     }
 }
 
@@ -148,7 +148,7 @@ struct PasswordSecureField: View {
     @Binding var password: String
     
     var body: some View {
-        SecureField("Password",text: $password)
+        SecureField(Text("password"),text: $password)
             .padding()
             .background(lightGreyColor)
             .cornerRadius(5.0)

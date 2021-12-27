@@ -10,7 +10,6 @@ import SwiftUIRouter
 import Alamofire
 let defaults = UserDefaults.standard
 
-
 struct Workspace_Previews: PreviewProvider {
     static var previews: some View {
         Workspace()
@@ -18,7 +17,12 @@ struct Workspace_Previews: PreviewProvider {
 }
 
 struct Workspace: View {
+    weak var timer: Timer?
+    
     @State var rooms:[RoomType] = []
+    
+    
+    
     func fetchData(){
         let url = URL(string:"http://192.168.0.106:3099/mobile/get")!
         AF.request(url, method:.get).responseDecodable(of: [RoomType].self){
@@ -47,6 +51,10 @@ struct Workspace: View {
         }.background(Color.init(red: 203/255, green: 238/255, blue: 243/255))
         .onAppear{
             fetchData()
+            Timer.scheduledTimer(withTimeInterval: 30.0, repeats: true){_ in
+                fetchData()
+            }
+            
         }
     }
 }

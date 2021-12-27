@@ -88,7 +88,11 @@ struct Room: View {
                     alignment: .topLeading).padding()
 
         }.padding().onAppear
-        {fetchData()}
+        {
+            
+            fetchData()
+            
+        }
 
 
     }

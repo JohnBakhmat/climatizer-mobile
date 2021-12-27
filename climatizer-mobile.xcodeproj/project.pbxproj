@@ -14,6 +14,7 @@
 		B844A8B5275BB67E00C3B4CA /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B844A8B4275BB67E00C3B4CA /* KeyboardResponder.swift */; };
 		B844A8B7275BC13400C3B4CA /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B844A8BB275BC15200C3B4CA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B844A8BA275BC15200C3B4CA /* Alamofire */; };
+		B867A9B82779DE2C00096CF7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B867A9B72779DE2C00096CF7 /* Localizable.strings */; };
 		B8BFAB2B2772378800E558A6 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BFAB2A2772378800E558A6 /* Room.swift */; };
 		B8DBD742275F9CA800391E13 /* Workspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DBD741275F9CA800391E13 /* Workspace.swift */; };
 		B8DBD745275FA1D800391E13 /* SwiftUIRouter in Frameworks */ = {isa = PBXBuildFile; productRef = B8DBD744275FA1D800391E13 /* SwiftUIRouter */; };
@@ -40,6 +41,7 @@
 		B844A8AA275BAABB00C3B4CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B844A8AD275BAABB00C3B4CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B844A8B4275BB67E00C3B4CA /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
+		B867A9B72779DE2C00096CF7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		B8BFAB2A2772378800E558A6 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		B8DBD741275F9CA800391E13 /* Workspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workspace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 				B844A8B4275BB67E00C3B4CA /* KeyboardResponder.swift */,
 				B8DBD741275F9CA800391E13 /* Workspace.swift */,
 				B8BFAB2A2772378800E558A6 /* Room.swift */,
+				B867A9B72779DE2C00096CF7 /* Localizable.strings */,
 			);
 			path = "climatizer-mobile";
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			knownRegions = (
 				en,
 				Base,
+				uk,
 			);
 			mainGroup = B844A89A275BAABA00C3B4CA;
 			packageReferences = (
@@ -171,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B844A8AE275BAABB00C3B4CA /* Preview Assets.xcassets in Resources */,
+				B867A9B82779DE2C00096CF7 /* Localizable.strings in Resources */,
 				B844A8AB275BAABB00C3B4CA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
